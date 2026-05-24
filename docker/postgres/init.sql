@@ -1,0 +1,8 @@
+CREATE DATABASE auth_db;
+CREATE DATABASE payment_db;
+CREATE DATABASE wallet_db;
+CREATE DATABASE fraud_db;
+GRANT ALL PRIVILEGES ON DATABASE auth_db TO payment_user;
+GRANT ALL PRIVILEGES ON DATABASE payment_db TO payment_user;
+GRANT ALL PRIVILEGES ON DATABASE wallet_db TO payment_user;
+GRANT ALL PRIVILEGES ON DATABASE fraud_db TO payment_user;
